@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html><!-- InstanceBegin template="/Templates/AFTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/favicon.jpg">
+<script src="js/modernizr.js"></script>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Alicia Faith Jewelry</title>
+<!-- InstanceEndEditable -->
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<!-- InstanceBeginEditable name="head" -->
+<!--author Alicia Hubbard, April 2013-->
+<style>
+ #carousel {
+    height: 200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1%;
+  }
+  #carousel img {
+    display: hidden; 
+    cursor: pointer; 
+  }
+  
+  @media screen and (min-width:750px){
+	  #carousel{
+		width:535px;
+	  }
+  }
+  
+  @media screen and (max-width:749px){
+	  #carousel{
+		  width:125px;
+	  }
+  }
+  
+</style>
+<!-- image carousel plugin courtesy of Brian Osbourne  http://www.bkosborne.com-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bkosborne-jQuery-Waterwheel-Carousel-v2.1.3-0-g078cc20/js/jquery.waterwheelCarousel.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	if ($(window).width() >= 750) {//if the window is at least 750 pixels wide, display the whole carousel
+   		$("#carousel").waterwheelCarousel({
+  			flankingItems: 3,
+ 			separation: 110,
+ 	 		separationMultiplier: .7,
+  			opacityMultiplier: 1,
+  			autoPlay: 2000,
+	  		movingToCenter: function ($item) {
+    			$('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+ 	 		},
+ 	 		movedToCenter: function ($item) {
+   				$('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+  			},
+ 	 		movingFromCenter: function ($item) {
+   		 		$('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+ 			},
+ 	 		movedFromCenter: function ($item) {
+   				$('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+	 		 },
+  			clickedCenter: function ($item) {
+  				$('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+  			}
+	  	});
+	}
+	else{//if the window is less than 750px wide, display a single-image slideshow
+   		$("#carousel").waterwheelCarousel({
+  			flankingItems: 0,
+ 			animationEasing:'swing',
+  			autoPlay: 2000,
+	  	});
+	}
+ });
+</script>
+<noscript>
+<style>/*a hack that is probably not up to strict standards. It was needed to make sure the images display acceptably with javascript turned off.*/
+#carousel, #slideshow{
+	width:90%;
+	height:auto;
+	text-align:center;
+}
+#carousel img, slideshow img{
+	display:inline;
+}
+</style>
+</noscript>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<header>
+<h1>Alicia Faith Jewelry</h1>
+<nav>
+	<a href="default.htm">About</a>
+    <a href="gallery.asp">Gallery</a>
+    <a href="calendar.htm">Calendar</a>
+    <a href="contact.asp">Contact</a>
+</nav>
+</header>
+<div id="headerSpacing"></div>
+<div id="content">
+<!-- InstanceBeginEditable name="content" -->
+<br/>
+<div id="carousel">
+	<img src="images/BrownSapphireandZirconHorse.gif"  alt="Image 1"/>
+	<img src="images/Malachite-Pendant.gif" alt="Image 2"/>
+	<img src="images/BlueTopazEarrings.gif"  alt="Image 3"/>
+	<img src="images/CitrineNecklace.gif"  alt="Image 4"/>
+    <img src="images/CrazyLaceAgatePendant.gif"  alt="Image 5"/>
+    <img src="images/AmazoniteRing.gif"  alt="Image 6"/>
+    <img src="images/BoulderOpalEarrings.gif"  alt="Image 7"/>
+</div>
+
+<h2>About</h2>
+
+<p>I use a variety of hand-selected gemstones, ranging from pink sapphires to crazy lace agate, as the focus of my work. On occasion, I have also found an inspiring and truly unique vintage component or include Swarovski crystals as accent pieces. Sterling silver is by far my favorite metal to work with because of its luster and versatility, though I will also use gold-filled if a piece demands it.   The main techniques I use are wirework, soldering, metal-forming, and stringing to achieve my vision for each stone.</p>
+
+<p>I see gemstones as unfinished natural works of art, and I design pieces that form a cohesive whole centered around the stone(s). Thus, I create pieces that are extensions of the stone(s) instead of using stones to accent my design.  Because I love trying new things and work with materials that are inherently unique, nearly all of my jewelry is one-of-a-kind. </p>
+
+<p>I also pay a great deal of attention to detail.  I spend hours painstakingly matching pairs of gemstones, and then wrapping them into earrings that match so perfectly it is nearly impossible to tell the two apart.  I also spend a lot of time creating sets of gemstones that harmonize for pieces that contain multiple stones.   Proper matching, whether for pairs or groupings, adds that subtle something that takes stones from beautiful to stunning. </p>
+<br/>
+
+<!-- InstanceEndEditable -->
+</div>
+<footer>
+&copy;2013 Alicia Faith Hubbard &nbsp; &nbsp; <a href="records.asp" id="admin">Administrator</a>
+</footer>
+</body>
+<!-- InstanceEnd --></html>

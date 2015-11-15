@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+#gallery{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+#gallery a{
+	display:inline-block;
+	margin: 8px;
+	width:150px;
+	height:150px;
+	z-index:0;
+		
+	-moz-box-shadow: 0px 4px 5px;	
+	-webkit-box-shadow:  0px 4px 5px;	
+	box-shadow: #787777 0px 4px 5px;
+}
+
+.large{
+	visibility:hidden;
+	position: absolute;
+	left:50%;
+	width:400px;
+	margin-left: -200px;
+	top: 50%;
+	height:400px;
+	margin-top: -200px;
+	z-index:11;
+	
+	-moz-box-shadow: 0px 6px 7px;	
+	-webkit-box-shadow:  0px 6px 7px;
+	box-shadow: #787777 0px 6px 7px;
+}
+
+.description{
+	visibility:hidden;
+	position: absolute;
+	left:130%;
+	width:50%;
+	margin-left: -25%;
+	top: 50%;
+	height:320px;
+	margin-top: -160px;
+	z-index:11;
+	overflow:hidden;
+	background-color:#ffffff;
+	background-color:rgba(255,255,255,.9);
+	color:5e5e5e;
+	
+	-moz-box-shadow: 0px 6px 7px;	
+	-webkit-box-shadow:  0px 6px 7px;
+	box-shadow: #787777 0px 6px 7px;
+}
+
+#gallery a{
+	color:#5e5e5e;
+	font-size:1em;
+}
+
+.description p{
+	font-size:1.2em;
+	color:5e5e5e;
+}
+#gallery a img{
+	border:none;
+}
+
+#gallery a:active img{
+	position:relative;
+	top:1px;
+}
+
+#gallery a:focus .large, #gallery a:focus .description{
+	visibility:visible;
+	z-index: 11;
+}
+
+@media screen and (max-width:760px){		
+	.description{
+		height: auto;
+		width:110%;
+		top:155%;
+		left:50%;
+		margin-left:-55%;
+		height:210px;
+	}
+}
+
+@media screen and (max-width:500px){
+	
+	.large{
+		height:300px;
+		width:300px;
+		margin-left:-150px;
+		margin-top:-150px;
+	}
+	
+	.large img{
+		width:300px;
+		height:300px;
+		}
+}

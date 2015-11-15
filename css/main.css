@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+/*Author Alicia Hubbard*/
+
+@import url(http://fonts.googleapis.com/css?family=Pinyon+Script);
+
+body, header, nav, div, p, img, a, footer, nav, ul, li, form{
+	display:block;
+}
+
+*:focus { 
+	outline:none; 
+}
+
+body{
+	background-color:#eae9e9;
+	margin:0;
+	font-size:100%;
+	color:#5e5e5e;
+}
+	
+header{
+	width:100%;
+	position:fixed;
+	text-align:center;
+	background-color:#eae9e9;
+	margin:0;
+	height:6.75em;
+	z-index:10;
+}
+
+nav{
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color:#00b25c;
+	margin-top:.5em;
+	padding-top:10px;
+	padding-bottom:12px;
+	
+	-moz-box-shadow: 0px 8px 11px;	
+	-webkit-box-shadow: 0px 8px 11px;	
+	box-shadow: 0px 8px 11px;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius:3px;
+	border-radius: 3px;
+}
+nav a{
+	display:inline;
+	position: relative;
+	background:none;
+	margin:.5em;
+	color:#e9e8e8;
+	text-decoration:none;
+	padding-bottom:8px;
+	
+	-moz-text-shadow: 0.1em 0.1em 0.2em #5e5e5e;
+	-webkit-text-shadow: 0.1em 0.1em 0.2em #5e5e5e;
+	text-shadow: 0.1em 0.1em 0.2em #5e5e5e;
+}
+
+nav a:hover{
+	color:#FFFFFF;
+}
+
+nav a:active {
+  top: 1.5px;
+  background-none;
+}
+  
+#content{
+	width:75%;
+	background-color:rgb(255,255,255);
+	margin-left:auto;
+	margin-right:auto;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius:3px;
+	border-radius: 3px;
+	
+	-moz-box-shadow: 0px 10px 15px;	
+	-webkit-box-shadow:  0px 10px 15px;	
+	box-shadow: 0px 5px 5px;
+}
+
+footer{
+	text-align:center;
+	padding-top:1%;
+}
+
+footer #admin{
+	color:#5e5e5e;
+}
+
+h1{
+	text-align:center;
+	font-family: 'Pinyon Script', Palace Script MT, Times,Serif; 
+	font-weight:300;
+	color:#00b25c;
+	font-size:2.5em;
+	margin:.25em;
+	margin-bottom:0;
+	
+	-moz-text-shadow: 0.04em 0.04em 0.08em #acaaaa;
+	-webkit-text-shadow: 0.04em 0.04em 0.08em #acaaaa;
+	text-shadow: 0.1em 0.1em 0.2em #acaaaa;
+}
+
+h2{
+	color:#00b25c;
+	text-align:center;
+	padding-top:1%;
+	
+	-moz-text-shadow: 0.1em 0.1em 0.2em ##969595;
+	-webkit-text-shadow: 0.1em 0.1em 0.2em #969595;
+	text-shadow: 0.1em 0.1em 0.2em #969595;
+}
+
+p{
+	width:90%;
+	padding-left:5%;
+	padding-right:5%;
+	clear:both;
+}
+
+a{
+	color:#00b25c;
+	display:inline;
+}
+
+.center{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#headerSpacing{/*yes, it's a hack, but it was nessesary to make everything display right*/
+	height:6.5em;
+}
+
+#calendar{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+form{
+	margin-left:auto;
+	margin-right:auto;
+	width:auto;
+	text-align:center;
+	max-width:90%;
+}
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+
+table .input input, table .input textarea{
+	width:100%;
+}
+
+@media screen and (max-width:370px){
+	h1{
+		font-size:2em;
+	}
+}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+.invalid {
+	border-color:#fd0701;
+	border-width:3px;
+}
+
+input:focus, textarea:focus{
+ 	background-color:#eae9e9;
+}
+
+#nameHint, #emailHint, #subjectHint, #messageHint{
+	Display:none;
+	size:.8em;
+	color: #00b25c;
+}
